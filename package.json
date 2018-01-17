@@ -6,6 +6,12 @@
   "author": "John Slemmer (https://github.com/johnslemmer)",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "deploy:dev": "prisma deploy",
+    "deploy": "yarn deploy:dev",
+    "playground:dev": "prisma playground",
+    "playground": "yarn playground:dev"
+  },
   "devDependencies": {
     "@playlyfe/gql": "^2.4.0",
     "prisma": "^1.0.4"
