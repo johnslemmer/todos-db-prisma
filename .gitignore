@@ -1,0 +1,11 @@
+# macOS standard ignore stuff
+.DS_Store
+
+# NPM installed modules
+node_modules
+
+# build directory
+build
+
+# distribution directory
+dist
