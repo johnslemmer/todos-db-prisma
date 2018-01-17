@@ -9,3 +9,5 @@ disableAuth: true
 
 datamodel: datamodel.graphql
 schema: prisma.graphql
+seed:
+  import: seed.graphql
