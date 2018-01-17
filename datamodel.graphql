@@ -1,4 +1,26 @@
 type User {
   id: ID! @unique
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  email: String! @unique
+  password: String!
+  lists: [List!]!
+}
+
+type List {
+  id: ID! @unique
+  createdAt: DateTime!
+  updatedAt: DateTime!
   name: String!
+  owner: User
+  todos: [Todo!]!
+}
+
+type Todo {
+  id: ID! @unique
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  name: String!
+  list: List!
+  isCompleted: Boolean! @default(value: "false")
 }
