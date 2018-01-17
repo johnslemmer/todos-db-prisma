@@ -2,9 +2,7 @@ service: todos-db-prisma
 
 stage: ${env:PRISMA_STAGE}
 cluster: ${env:PRISMA_CLUSTER}
-disableAuth: true
-# TODO uncomment later
-# disableAuth: ${env:PRISMA_DISABLE_AUTH}
-# secret: ${env:PRISMA_SECRET}
+disableAuth: ${env:PRISMA_DISABLE_AUTH}
+secret: ${env:PRISMA_SECRET}
 
 datamodel: datamodel.graphql
