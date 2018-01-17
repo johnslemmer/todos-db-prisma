@@ -8,3 +8,4 @@ disableAuth: true
 # secret: ${env:PRISMA_SECRET}
 
 datamodel: datamodel.graphql
+schema: prisma.graphql
