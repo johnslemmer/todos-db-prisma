@@ -1,0 +1,9 @@
+{
+  "name": "todos-db-prisma",
+  "version": "0.1.0",
+  "description": "Database for a todos app using Prisma",
+  "main": "index.js",
+  "author": "John Slemmer (https://github.com/johnslemmer)",
+  "license": "MIT",
+  "private": true
+}
