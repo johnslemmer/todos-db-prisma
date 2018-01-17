@@ -8,7 +8,9 @@
   "private": true,
   "scripts": {
     "deploy:dev": "prisma deploy",
+    "deploy:local": "prisma deploy -e .env.local",
     "deploy": "yarn deploy:dev",
+    "playground:local": "prisma playground -e .env.local",
     "playground:dev": "prisma playground",
     "playground": "yarn playground:dev"
   },
