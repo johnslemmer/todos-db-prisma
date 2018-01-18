@@ -3,7 +3,7 @@ service: todos-db-prisma
 stage: ${env:PRISMA_STAGE}
 cluster: ${env:PRISMA_CLUSTER}
 disableAuth: true
-# TODO uncomment later
+# TODO uncomment later when https://github.com/graphcool/prisma/issues/1673 is addressed
 # disableAuth: ${env:PRISMA_DISABLE_AUTH}
 # secret: ${env:PRISMA_SECRET}
 
