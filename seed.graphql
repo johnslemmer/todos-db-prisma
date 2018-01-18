@@ -1,0 +1,51 @@
+mutation seed {
+
+  johndoe: createUser(data: {
+    email: "john.doe@gmail.com",
+    password: "password",
+    lists: {
+      create: {
+        name: "johns list",
+        todos: {
+          create: {
+            name: "get groceries",
+          }
+        }
+      }
+    }
+  })
+  {
+    id
+  }
+
+  janedoe: createUser(data: {
+    email: "jane.doe@gmail.com",
+    password: "password",
+    lists: {
+      create: {
+        name: "janes list",
+        todos: {
+          create: {
+            name: "go for a walk",
+          }
+        }
+      }
+    }
+  })
+  {
+    id
+  }
+
+  publicList: createList(data: {
+    name: "public list",
+    todos: {
+      create: {
+        name: "save the planet",
+      }
+    }
+  })
+  {
+    id
+  }
+
+}

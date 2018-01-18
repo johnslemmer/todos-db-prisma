@@ -6,3 +6,6 @@ disableAuth: ${env:PRISMA_DISABLE_AUTH}
 secret: ${env:PRISMA_SECRET}
 
 datamodel: datamodel.graphql
+schema: prisma.graphql
+seed:
+  import: seed.graphql
